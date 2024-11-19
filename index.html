@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="index.css" />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AI Italian Poem Generator</title>
   </head>
@@ -12,7 +13,7 @@
         <h1>Welcome to AI Italian poem Generator</h1>
       </header>
       <main>
-        <form>
+        <form id="form-for-poem">
           <input
             type="text"
             class="instructions"
@@ -23,11 +24,7 @@
           />
           <input type="submit" class="submit-button" />
         </form>
-        <div class="poem">
-          Poem goes here
-          <br />
-          roses are red, violets are blue
-        </div>
+        <div class="poem" id="poem"></div>
       </main>
 
       <footer>

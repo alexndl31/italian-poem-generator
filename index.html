@@ -14,19 +14,22 @@
         <h1>Welcome to AI Italian poem Generator</h1>
       </header>
       <main>
-        <form id="form-for-poem">
-          <input
-            type="text"
-            class="instructions"
-            id="user-instructions"
-            autofocus
-            required
-            autocomplete="off"
-            placeholder="Enter topic for your Italian poem"
-          />
-          <input type="submit" class="submit-button" />
-        </form>
-        <div class="poem" id="poem"></div>
+        <div class="form-wrapper">
+          <form id="form-for-poem">
+            <input
+              type="text"
+              class="instructions"
+              id="user-instructions"
+              autofocus
+              required
+              autocomplete="off"
+              placeholder="Enter topic for your Italian poem"
+            />
+            <input type="submit" class="submit-button" />
+          </form>
+          <div id="hint">i.e. Flower, home, love...</div>
+        </div>
+        <div class="poem hidden" id="poem"></div>
       </main>
 
       <footer>
